@@ -1,0 +1,81 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#smallDisplay {
+    display: none;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #1D1D1D;
+    color: #FFE1C8;
+    
+}
+
+nav h1 {
+    font-family: 'Halant', cursive;
+    font-weight: 400;
+    font-size: 3.8rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0 20px 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-size: 1.563rem;
+    font-weight: 300;
+    font-style: italic;
+    
+}
+
+nav a {
+    color: #FFF;;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+/* For mobile view */
+@media screen and (max-width: 576px) {
+    body {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #FFE1C8;
+    }
+
+    #smallDisplay {
+        display: block;
+        background-color: #1D1D1D;
+        padding: 0;
+    }
+
+    #largeNavBar {
+        display:  none;
+    }
+
+    #title {
+        font-family: 'Halant', cursive;
+        font-weight: 400;
+        font-size: 2.441rem;
+    }
+
+    h5 {
+        font-family: 'Halant', cursive;
+        font-size: 2rem;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+}

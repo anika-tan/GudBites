@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GudBites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles/italian.css">
+</head>
+<body>
+  <!--Navigation bar for small displays-->
+  <nav id="smallDisplay" class="navbar navbar-dark fixed-top navbar-default">
+    <div class="container-fluid">
+      <a id="title" class="navbar-brand" href="index.html">GudBites</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">GudBites</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="#">Italian</a></li>
+            <li class="nav-item"><a class="nav-link active" href="mexican.html">Mexican</a></li>
+            <li class="nav-item"><a class="nav-link active" href="chinese.html">Chinese</a></li>
+            <li class="nav-item"><a class="nav-link active" href="indian.html">Indian</a></li>
+            <li class="nav-item"><a class="nav-link active" href="french.html">French</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navigation bar for computer displays-->
+  <nav id="largeNavBar">
+    <a href="index.html"><h1>GudBites</h1></a>
+    <ul>
+      <li><a href="#">Italian</a></li>
+      <li><a href="mexican.html">Mexican</a></li>
+      <li><a href="chinese.html">Chinese</a></li>
+      <li><a href="indian.html">Indian</a></li>
+      <li><a href="french.html">French</a></li>
+    </ul>
+  </nav>
+
+  <div id="wrapper">
+    <div class="description">
+      <div class="content">
+        <h1>Italian Cuisine</h1>
+        <p>Italian cuisine is known for its simplicity, using fresh and high-quality ingredients to create delicious dishes that are full of flavor.  
+          Pasta, pizza, and risotto are popular Italian dishes that have become widely known and loved around the world.</p>
+      </div>
+      <div class="content-img">
+        <img src="images/italian/header.jpg" class="card-img-top" alt="Vatos Urban Tacos">
+      </div>
+    </div>
+
+    <div class="gallery">
+      <div class="restPhoto">
+        <img src="images/italian/etna.jpg" class="card-img-top" alt="Etna">
+        <div class="overlay">
+          <div class="text">
+            <h2>Etna Italian Restaurant & Pizzeria</h2>
+            <p>110 Upper East Coast Road, Singapore 455298</p>
+          </div>
+          
+        </div>
+        
+      </div> <!--
+      <div class="restPhoto">
+        <img src="images/italian/illido.png" class="card-img-top" alt="Il Lido">
+      </div>
+      <div class="restPhoto">
+        <img src="images/italian/la-nonna.jpg" class="card-img-top" alt="La Nonna">
+      </div>
+      <div class="restPhoto">
+        <img src="images/italian/petes.jpg" class="card-img-top" alt="Pete's ">
+      </div>
+    </div> -->
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>

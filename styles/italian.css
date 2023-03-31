@@ -1,0 +1,158 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#smallDisplay {
+    display: none;
+}
+
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #1D1D1D;
+    color: #FFE1C8;
+    
+}
+
+nav h1 {
+    font-family: 'Halant', cursive;
+    font-weight: 400;
+    font-size: 3.8rem;
+    text-align: center;
+    margin-top: 2%;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0 20px 0;
+}
+
+nav ul li{
+    list-style-type: none;
+    font-size: 1.563rem;
+    font-weight: 300;
+    font-style: italic;
+    
+}
+
+nav a {
+    color: #FFF;;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+#wrapper {
+    margin: 0 5%;
+}
+
+.description {
+    background-color: #596B5F;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+}
+
+.description .content {
+    padding: 5%;
+}
+
+.description .content p {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.description .content-img img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: stretch;
+    justify-content: center;
+    margin-bottom: 15px;
+}  
+  
+.text {
+    text-align: center;
+    position: relative;
+    padding: 0 5%;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.restPhoto {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 10px;
+    border: 0;
+    position: relative;
+}
+
+.restPhoto img {
+    height: 13rem;
+    object-fit: cover;
+    display: block;
+}
+
+.restPhoto:hover .overlay {
+    height: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .5s ease;
+}
+
+/* For mobile view */
+@media screen and (max-width: 576px) {
+    body {
+        font-family: 'Nunito Sans', sans-serif;
+        color: #FFE1C8;
+    }
+
+    #smallDisplay {
+        display: block;
+        background-color: #1D1D1D;
+        padding: 0;
+    }
+
+    #largeNavBar {
+        display:  none;
+    }
+
+    #title {
+        font-family: 'Halant', cursive;
+        font-weight: 400;
+        font-size: 2.441rem;
+    }
+
+    h5 {
+        font-family: 'Halant', cursive;
+        font-size: 2rem;
+    }
+
+    ul li {
+        font-size: 1em;
+    }
+
+    .description {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+}

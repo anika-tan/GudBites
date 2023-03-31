@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GudBites</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Halant:wght@300;400;500;600;700&family=Nunito+Sans:ital,wght@0,300;0,400;0,600;1,300;1,400&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="styles/index.css">
+</head>
+<body>
+  <!--Navigation bar for small displays-->
+  <nav id="smallDisplay" class="navbar navbar-dark fixed-top navbar-default">
+    <div class="container-fluid">
+      <a id="title" class="navbar-brand" href="#">GudBites</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">GudBites</h5>
+          <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">Home</a></li>
+            <li class="nav-item"><a class="nav-link active" href="italian.html">Italian</a></li>
+            <li class="nav-item"><a class="nav-link active" href="mexican.html">Mexican</a></li>
+            <li class="nav-item"><a class="nav-link active" href="chinese.html">Chinese</a></li>
+            <li class="nav-item"><a class="nav-link active" href="indian.html">Indian</a></li>
+            <li class="nav-item"><a class="nav-link active" href="french.html">French</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Navigation bar for computer displays-->
+  <nav id="largeNavBar">
+    <a href="#"><h1>GudBites</h1></a>
+    <ul>
+      <li><a href="italian.html">Italian</a></li>
+      <li><a href="mexican.html">Mexican</a></li>
+      <li><a href="chinese.html">Chinese</a></li>
+      <li><a href="indian.html">Indian</a></li>
+      <li><a href="french.html">French</a></li>
+    </ul>
+  </nav>
+
+  <div class="gallery">
+    <div class="card">
+      <img src="images/restaurant/vatos_urban_tacos.jpg" class="card-img-top" alt="Vatos Urban Tacos">
+      <div class="card-body">
+        <p class="card-text ratings">★★★☆☆</p>
+        <p class="card-text restName">Vatos Urban Tacos</p>
+        <p class="card-text location">36 Beach Rd, Singapore 189677</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/restaurant/amo.jpg" class="card-img-top" alt="Amo">
+      <div class="card-body">
+        <p class="card-text ratings">★★★☆☆</p>
+        <p class="card-text restName">Amo</p>
+        <p class="card-text location">33 Hong Kong St, Singapore 059672</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/restaurant/dtf.jpg" class="card-img-top" alt="Din Tai Fung">
+      <div class="card-body">
+        <p class="card-text ratings">★★★★☆</p>
+        <p class="card-text restName">Din Tai Fung</p>
+        <p class="card-text location">290 Orchard Rd, #B1-03 The Paragon, Singapore 238859</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/restaurant/biryani-factory.jpg" class="card-img-top" alt="Biryani Factory">
+      <div class="card-body">
+        <p class="card-text ratings">★★★☆☆</p>
+        <p class="card-text restName">Biryani Factory</p>
+        <p class="card-text location">810 Geylang Rd, #01-02 City Plaza, Singapore 409286</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/restaurant/chimis.jpg" class="card-img-top" alt="Chimi's">
+      <div class="card-body">
+        <p class="card-text ratings">★★★☆☆</p>
+        <p class="card-text restName">Chimi's</p>
+        <p class="card-text location">1 Marina Boulevard, #01-01 NTUC Centre, Singapore 018989</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/restaurant/crystal-jade.jpg" class="card-img-top" alt="Crystal Jade">
+      <div class="card-body">
+        <p class="card-text ratings">★★★★★</p>
+        <p class="card-text restName">Crystal Jade</p>
+        <p class="card-text location">290 Orchard Rd, Paragon #05-22, Singapore 238859</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/restaurant/collins.jpg" class="card-img-top" alt="Collin's">
+      <div class="card-body">
+        <p class="card-text ratings">★★☆☆☆</p>
+        <p class="card-text restName">COLLIN'S</p>
+        <p class="card-text location">1 Kim Seng Promenade, #B1-106/107 Great World, Singapore 237994</p>
+      </div>
+    </div>
+    <div class="card">
+      <img src="images/restaurant/putien.jpg" class="card-img-top" alt="Putien">
+      <div class="card-body">
+        <p class="card-text ratings">★★★★☆</p>
+        <p class="card-text restName">PUTIEN</p>
+        <p class="card-text location">127 Kitchener Rd, Singapore 208514</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</body>
+</html>
