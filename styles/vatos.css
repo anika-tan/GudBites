@@ -45,55 +45,48 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-.gallery {
-    display: flex;
-    flex-flow: row wrap;
-    align-items: stretch;
-    justify-content: center;
-    margin-bottom: 15px;
+#wrapper {
+    margin: 0 5%;
 }
 
-.gallery a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.card {
-    width: 18rem;
-    display: flex;
-    flex-flow: column wrap;
-    margin: 10px;
-    border: 0;
-}
-
-.card .card-body {
+.description {
     background-color: #596B5F;
-    color: #FFE1C8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+    margin-bottom: 3%;
 }
 
-img {
-    height: 187px;
-    width: 285px;
-    object-fit: cover;
+.description .content {
+    padding: 5%;
+    margin: auto 0;
 }
 
-.ratings {
-    font-weight: 400;
-    font-size: 1.25em;
+.description .content h1 {
+    font-family: 'Halant', serif;
+    font-size: 3.052rem;
+}
+
+.description .content h2 {
     margin: 0;
+    font-size: 1.953rem
 }
 
-.restName {
-    font-size: 1.5em;
-    font-family: 'Halant', cursive;
-    font-weight: 400;
+.description .content h3 {
     margin: 0;
-}
-
-.location {
+    font-size: 1.563rem;
     font-weight: 300;
     font-style: italic;
-    font-size: 1em;
+}
+
+.description .content p {
+    margin: 0;
+    font-size: 1.563rem;
+}
+
+.description .content-img img {
+    height: 100%;
+    object-fit: cover;
 }
 
 /* For mobile view */
@@ -113,9 +106,6 @@ img {
         display:  none;
     }
 
-    .gallery {
-        margin-top: 70px;
-    }
 
     #title {
         font-family: 'Halant', cursive;
@@ -123,12 +113,29 @@ img {
         font-size: 2.441rem;
     }
 
-    h5 {
-        font-family: 'Halant', cursive;
-        font-size: 2rem;
+    ul li {
+        font-size: 1em;
     }
 
-    ul li {
+    .description {
+        margin-top: 70px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .description .content h1 {
+        font-size: 1.953em;
+    }
+    
+    .description .content h2 {
+        font-size: 1.25em;
+    }
+    
+    .description .content h3 {
+        font-size: 1em;
+    }
+    
+    .description .content p {
         font-size: 1em;
     }
 }
