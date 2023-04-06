@@ -95,12 +95,39 @@ nav ul li a:hover {
     grid-gap: 2%;
 }
 
-.left {
-    background-color: red;
-}
-
 .right {
     background-color: aqua;
+}
+
+.indivReview {
+    background-color: #596B5F;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 5px;
+    margin-bottom: 3%;
+}
+
+.indivReview .content {
+    padding: 5%;
+}
+
+.indivReview .content .stars {
+    font-size: 1.563em;
+}
+
+.indivReview .content h1 {
+    font-size: 1.953em;
+    font-weight: 600;
+}
+
+.indivReview .content p {
+    margin: 0;
+    font-size: 1.25em;
+}
+
+.indivReview .content-img img {
+    height: 100%;
+    object-fit: cover;
 }
 
 /* For mobile view */
@@ -117,7 +144,7 @@ nav ul li a:hover {
     }
 
     #largeNavBar {
-        display:  none;
+        display: none;
     }
 
     #title {
@@ -155,5 +182,13 @@ nav ul li a:hover {
     .reviews {
         display: flex;
         flex-direction: column-reverse;
+    }
+
+    .indivReview {
+        display: block;
+    }
+
+    .indivReview .content-img img {
+        display: none;
     }
 }
