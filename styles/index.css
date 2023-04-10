@@ -54,8 +54,13 @@ nav ul li a:hover {
 }
 
 .gallery a {
+    height: 100%;
     text-decoration: none;
     color: inherit;
+}
+
+.gallery a:hover {
+    color: #fff;
 }
 
 .card {
