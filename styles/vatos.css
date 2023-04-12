@@ -152,6 +152,7 @@ nav ul li a:hover {
 }
 
 .right .form input[type="text"] {
+    padding: 2px;
     margin: 0 0 15px 15px;
     width: 100%;
 }
@@ -161,6 +162,7 @@ nav ul li a:hover {
 }
 
 .right .form .comments textarea{
+    padding: 2px;
     margin-left: 15px;
     margin-bottom: 15px;
     width: 100%;
